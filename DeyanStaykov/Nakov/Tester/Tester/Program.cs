@@ -4,6 +4,8 @@ class Program
 {
     static void Main()
     {
+        //This is the tester that thou shalt use
+
         #region
         //Console.Write("Enter a number and see its square: ");
         //string str = Console.ReadLine(); //initializing
@@ -216,62 +218,144 @@ class Program
         #endregion
 
         #region
-        Console.WriteLine("Enter two numbers N and K and I will calculate " + Environment.NewLine +
-            "N! / K! (Problem 6) and N!*K!/(N-K)! (Problem7)" + Environment.NewLine +
-            "Cn = (2n!)/(n+1)!n! (Problem8)." + Environment.NewLine +
-            "S = 1 + 1!/x^1 + 2!/x^2 + ... + n!/x^n (Problem9).");
-        Console.Write("Enter N: ");
-        double N = int.Parse(Console.ReadLine());
-        Console.Write("Enter K: ");
-        int K = int.Parse(Console.ReadLine());
-        Console.Write("Enter X: ");
-        double xNine = int.Parse(Console.ReadLine());
-        double sevenConstant = N - K, doubleN = 2 * N;
-        double S = 1;
+        //Console.WriteLine("Enter two numbers N and K and I will calculate " + Environment.NewLine +
+        //    "N! / K! (Problem 6) and N!*K!/(N-K)! (Problem7)" + Environment.NewLine +
+        //    "Cn = (2n!)/(n+1)!n! (Problem8)." + Environment.NewLine +
+        //    "S = 1 + 1!/x^1 + 2!/x^2 + ... + n!/x^n (Problem9).");
+        //Console.Write("Enter N: ");
+        //double N = int.Parse(Console.ReadLine());
+        //Console.Write("Enter K: ");
+        //int K = int.Parse(Console.ReadLine());
+        //Console.Write("Enter X: ");
+        //double xNine = int.Parse(Console.ReadLine());
+        //double sevenConstant = N - K, doubleN = 2 * N;
+        //double S = 1;
 
-        #region Problem 6 Loop
-        while (K > N)
-        {
-            Console.Write("K must be smaller than N. Enter a new value for K: ");
-            K = int.Parse(Console.ReadLine());
-        }
+        //#region Problem 6 Loop
+        //while (K > N)
+        //{
+        //    Console.Write("K must be smaller than N. Enter a new value for K: ");
+        //    K = int.Parse(Console.ReadLine());
+        //}
+        //#endregion
+
+        //int nFactorial = 1, kFactorial = 1, sevenFactorial = 1, doublenFactorial = 1, nPlusOneFactorial = 1, nineFac = 1;
+
+        //#region For Cycles
+        //for (int i = 1; i <= N; i++) nFactorial *= i;
+        //for (int i = 1; i <= N + 1; i++) nPlusOneFactorial *= i;
+        //for (int i = 1; i <= K; i++) kFactorial *= i;
+        //for (int i = 1; i <= sevenConstant; i++) sevenFactorial *= i;
+        //for (int i = 1; i <= doubleN; i++) doublenFactorial *= i;
+        //for (int i = 1; i <= N; i++)
+        //{
+        //    nineFac = 1;
+        //    for (int j = i; j >= 1; j--)
+        //    {
+        //        nineFac *= j;
+        //    }
+        //    S += nineFac / Math.Pow(xNine, i);
+        //}
+        //#endregion
+
+
+        //#region Answers
+        //int dividedFactorial = nFactorial / kFactorial;
+        //Console.WriteLine("Answer to problem 6: ");
+        //Console.WriteLine(dividedFactorial);
+        //double complexFactorial = (N * K) / sevenFactorial;
+        //Console.WriteLine("Answer to problem 7: ");
+        //Console.WriteLine(sevenFactorial);
+        //double catalanNumber = (doublenFactorial) / ((nPlusOneFactorial) * nFactorial);
+        //Console.WriteLine("Answer to problem 8: ");
+        //Console.WriteLine(catalanNumber);
+        //#endregion
+
+        //Console.WriteLine("Answer to problem 9: ");
+        //Console.WriteLine("{0:##.##}", S);
+
+        //Console.WriteLine();
         #endregion
 
-        int nFactorial = 1, kFactorial = 1, sevenFactorial = 1, doublenFactorial = 1, nPlusOneFactorial = 1, nineFac = 1;
+        #region
+        //Create an algorithm that prints out a square matrix for N > 0 && N < 20 (i. e. for N = 2 print out 1, 2, 3
+        //                                                                                                   2, 3, 4       
+        //                                                                                                   3, 4, 5
 
-        #region For Cycles
-        for (int i = 1; i <= N; i++) nFactorial *= i;
-        for (int i = 1; i <= N + 1; i++) nPlusOneFactorial *= i;
-        for (int i = 1; i <= K; i++) kFactorial *= i;
-        for (int i = 1; i <= sevenConstant; i++) sevenFactorial *= i;
-        for (int i = 1; i <= doubleN; i++) doublenFactorial *= i;
-        for (int i = 1; i <= N; i++)
+        //Console.WriteLine("Enter a number between 0 and 20 and I will print create a matrix out of it.");
+        //Console.Write("Your number is: ");
+        //int nMatrix = int.Parse(Console.ReadLine());
+        //while (nMatrix < 0 || nMatrix > 20)
+        //{
+        //    Console.Write("The number must be between 0 and 20, enter a new number: ");
+        //    nMatrix = int.Parse(Console.ReadLine());
+        //}
+        #endregion
+
+        #region PROBLEM 11 SOLVED, TRANSFER SOLUTION
+        //Create an algorithm that calculates finds prints out how many zeroes a given factorial has
+        //Console.Write("Enter N: ");
+        //double elevenN = int.Parse(Console.ReadLine());
+        //long elevenFactorial = 1;
+        //for (int i = 1; i <= elevenN; i++) elevenFactorial *= i;
+        //int zeroCounter = 0;
+        //while(elevenFactorial % 10 == 0)
+        //{
+        //    elevenFactorial /= 10;
+        //    zeroCounter++;
+        //}
+        //Console.WriteLine(elevenFactorial);
+        //Console.WriteLine(zeroCounter);
+
+        //Console.WriteLine();
+        #endregion
+
+        #region PROBLEM 16 SOLVED, TRANSFER SOLUTION
+
+        //Create an algorithm that prints out randomly the numbers between 1 and the user-generated N
+        //Console.Write("Enter a number and I will print " + Environment.NewLine +
+        //    "randomly the numbers between 1 and your number.");
+        //int userNumber = int.Parse(Console.ReadLine());
+        //int[] oneToN = new int[userNumber];
+        //int firstSwap, secondSwap, host;
+        //Random firstRandom = new Random();
+        //firstSwap = firstRandom.Next(1, userNumber);
+        //secondSwap = firstRandom.Next(1, userNumber);
+        //for (int i = 0; i < oneToN.Length; i++)
+        //{
+        //    oneToN[i] = int.Parse(Console.ReadLine());
+        //}
+        //for (int i = 0; i < userNumber; i++)
+        //{
+        //    host = oneToN[firstSwap];
+        //    oneToN[firstSwap] = oneToN[secondSwap];
+        //    oneToN[secondSwap] = host;
+        //    firstSwap = firstRandom.Next(1, userNumber);
+        //    secondSwap = firstRandom.Next(1, userNumber);
+        //}
+        //foreach (int item in oneToN)
+        //{
+        //    Console.Write(item + " ");
+        //}
+        //Console.WriteLine();
+
+
+        #endregion
+
+        #region School Problem Solution
+        int n = int.Parse(Console.ReadLine());
+        for (int i = 0; i < n; i++)
         {
-            nineFac = 1;
-            for (int j = i; j >= 1; j--)
+            if (i == 0)
             {
-                nineFac *= j;
+                Console.WriteLine(new string('*', n));
             }
-            S += nineFac / Math.Pow(xNine, i);
+            else if (i == n - 1)
+            {
+                Console.Write(new string('*', n));
+            }
+            else Console.WriteLine('*' + "".PadRight(n - 2) + '*');
         }
-        #endregion
-
-
-        #region Answers
-        int dividedFactorial = nFactorial / kFactorial;
-        Console.WriteLine("Answer to problem 6: ");
-        Console.WriteLine(dividedFactorial);
-        double complexFactorial = (N * K) / sevenFactorial;
-        Console.WriteLine("Answer to problem 7: ");
-        Console.WriteLine(sevenFactorial);
-        double catalanNumber = (doublenFactorial) / ((nPlusOneFactorial) * nFactorial);
-        Console.WriteLine("Answer to problem 8: ");
-        Console.WriteLine(catalanNumber);
-        #endregion
-
-        Console.WriteLine("Answer to problem 9: ");
-        Console.WriteLine("{0:##.##}", S);
-
         Console.WriteLine();
         #endregion
 

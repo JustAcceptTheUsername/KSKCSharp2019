@@ -29,6 +29,7 @@ class Program
 
         #region Chapter VI Problem 3
         //Create an algorithm that takes numbers from user input and prints out the biggest and the smallest
+        Console.WriteLine("Enter a few numbers and I will print out the biggest and smallest one.");
         int min, max, number;
         Console.Write("Please enter a minimum number: ");
         min = int.Parse(Console.ReadLine());
@@ -160,10 +161,53 @@ class Program
         Console.WriteLine();
         #endregion
 
-        #region Chapter VI Problem 10
+        #region Chapter VI Problem 11
+        //Create an algorithm that calculates finds prints out how many zeroes a given factorial has
+        Console.WriteLine("Enter a number and I will tell you how many zeroes its factorial has.");
+        Console.Write("Enter N: ");
+        double elevenN = int.Parse(Console.ReadLine());
+        long elevenFactorial = 1;
+        for (int i = 1; i <= elevenN; i++) elevenFactorial *= i;
+        int zeroCounter = 0;
+        while (elevenFactorial % 10 == 0)
+        {
+            elevenFactorial /= 10;
+            zeroCounter++;
+        }
+        Console.WriteLine(elevenFactorial);
+        Console.WriteLine(zeroCounter);
 
 
+        Console.WriteLine();
+        #endregion
 
+        #region Chapter VI Problem 16
+        //Create an algorithm that prints out randomly the numbers between 1 and the user-generated N
+        Console.Write("Enter a number and I will print " + Environment.NewLine +
+            "randomly the numbers between 1 and your number.");
+        int userNumber = int.Parse(Console.ReadLine());
+        int[] oneToN = new int[userNumber];
+        int firstSwap, secondSwap, host;
+        Random firstRandom = new Random();
+        firstSwap = firstRandom.Next(1, userNumber);
+        secondSwap = firstRandom.Next(1, userNumber);
+        for (int i = 0; i < oneToN.Length; i++)
+        {
+            oneToN[i] = int.Parse(Console.ReadLine());
+        }
+        for (int i = 0; i < userNumber; i++)
+        {
+            host = oneToN[firstSwap];
+            oneToN[firstSwap] = oneToN[secondSwap];
+            oneToN[secondSwap] = host;
+            firstSwap = firstRandom.Next(1, userNumber);
+            secondSwap = firstRandom.Next(1, userNumber);
+        }
+        foreach (int item in oneToN)
+        {
+            Console.Write(item + " ");
+        }
+        
         Console.WriteLine();
         #endregion
     }
